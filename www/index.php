@@ -3,18 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LAMP STACK</title>
+        <title>LAMP AFPA</title>
         <link rel="stylesheet" href="/assets/css/bulma.min.css">
     </head>
     <body>
-        <section class="hero is-medium is-info is-bold">
+        <section class="hero is-medium is-primary is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title">
-                        LAMP STACK
+                        LAMP AFPA
                     </h1>
                     <h2 class="subtitle">
-                        Your local development environment
+                        Votre environnement local de dev
                     </h2>
                 </div>
             </div>
@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="columns">
                     <div class="column">
-                        <h3 class="title is-3 has-text-centered">Environment</h3>
+                        <h3 class="title is-3 has-text-centered">Environnement</h3>
                         <hr>
                         <div class="content">
                             <ul>
@@ -48,14 +48,14 @@
                         </div>
                     </div>
                     <div class="column">
-                        <h3 class="title is-3 has-text-centered">Quick Links</h3>
+                        <h3 class="title is-3 has-text-centered">Liens rapides</h3>
                         <hr>
                         <div class="content">
                             <ul>
                                 <li><a href="/phpinfo.php">phpinfo()</a></li>
                                 <li><a href="http://localhost:<? print $_ENV['PMA_PORT']; ?>">phpMyAdmin</a></li>
-                                <li><a href="/test_db.php">Test DB Connection with mysqli</a></li>
-                                <li><a href="/test_db_pdo.php">Test DB Connection with PDO</a></li>
+                                <li><a href="/test_db.php">Test de Connexion avec mysqli</a></li>
+                                <li><a href="/test_db_pdo.php">TTest de Connexion avec PDO</a></li>
                             </ul>
                         </div>
                     </div>
