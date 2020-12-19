@@ -117,14 +117,16 @@
                                 </div>
                                 <div class="py-4">
                                     <dt class="text-lg leading-6 font-medium text-white">
-                                        Mes Projets
+                                        <?php
+                                        $directory = 'projets';
+                                        $scanned_directory = array_diff(scandir($directory), array('..', '.'));
+                                        ?>
+                                        Mes Projets <span class="text-green-600 font-semibold">(<?= count($scanned_directory)?>)</span>
                                     </dt>
                                     <dd class="mt-2 text-base text-green-400 font-semibold">
 
                                         <ul class="list-disc list-inside">
                                             <?php
-                                            $directory = 'projets';
-                                            $scanned_directory = array_diff(scandir($directory), array('..', '.'));
                                             if (count($scanned_directory) > 0) {
                                                 foreach ($scanned_directory as &$projet) { ?>
                                                     <li><a href="/projets/<?= $projet ?>"><?= $projet ?></a></li>
