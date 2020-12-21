@@ -119,7 +119,7 @@
                                     <dt class="text-lg leading-6 font-medium text-white">
                                         <?php
                                         $directory = 'projets';
-                                        $scanned_directory = array_diff(scandir($directory), array('..', '.'));
+                                        $scanned_directory = array_diff(scandir($directory), array('..', '.','.gitkeep'));
                                         ?>
                                         Mes Projets <span class="text-green-600 font-semibold">(<?= count($scanned_directory)?>)</span>
                                     </dt>
