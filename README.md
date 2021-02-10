@@ -22,6 +22,7 @@ docker-compose up -d
 * Une fois le Stack lancé, il vous suffit d'aller ouvrir dans votre navigateur la page `localhost:81`. Le port 81 est modifiable dans le fichier `.env`. Ce choix permet de faire tourner ce stack sur les machines sans se préoccuper de savoir si votre port 80 est déjà pris.
 * Vous pouvez désormais créer vos projets dans le dossier `www/projets`en ajoutant un dossier par projet.
 * Mysql est sur le port 3307 et on peut s'y connecter avec les identifiants suivant: `login = root | password = tiger`.
+* Pour une connection PDO, la connection se fait comme dans le fichier d'exemple. Vous passez par l'intérieur du Stack et le host est `mysql:host=database:3306`.
 
 ## Adaptation du stack
 
