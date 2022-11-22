@@ -48,6 +48,7 @@ RUN pecl install redis-5.3.3 && \
 RUN docker-php-ext-install pdo_mysql && \
     docker-php-ext-install pdo_sqlite && \
     docker-php-ext-install mysqli && \
+    docker-php-ext-install zip && \
     docker-php-ext-install curl 
 # Enable apache modules
 RUN a2enmod rewrite headers
